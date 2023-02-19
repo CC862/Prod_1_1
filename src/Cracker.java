@@ -4,7 +4,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 import java.util.HashSet;
 
-public class SimpleCracker {
+public class Cracker {
 
     public static String toHex(byte[] bytes) {
         BigInteger bi = new BigInteger(1, bytes);
@@ -14,7 +14,7 @@ public class SimpleCracker {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
 
         // read common passwords file into a set
-        File commonPasswordsFile = new File("Prod_1_1\\src\\common-passwords.txt");
+        File commonPasswordsFile = new File("common-passwords.txt");
         Scanner scanner = new Scanner(commonPasswordsFile);
         HashSet<String> commonPasswords = new HashSet<>();
         while (scanner.hasNextLine()) {
@@ -23,7 +23,7 @@ public class SimpleCracker {
         scanner.close();
 
         // read shadow file and try to crack passwords
-        File shadowFile = new File("Prod_1_1\\src\\shadow");
+        File shadowFile = new File("shadow");
         scanner = new Scanner(shadowFile);
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
