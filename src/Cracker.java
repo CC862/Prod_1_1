@@ -14,7 +14,8 @@ public class Cracker {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
 
         // read common passwords file into a set
-        File commonPasswordsFile = new File("common-passwords.txt");
+        //File commonPasswordsFile = new File("common-passwords");
+        File commonPasswordsFile = new File("shortlist");
         Scanner scanner = new Scanner(commonPasswordsFile);
         HashSet<String> commonPasswords = new HashSet<>();
         while (scanner.hasNextLine()) {
