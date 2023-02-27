@@ -1,3 +1,5 @@
+// Course: CS645
+//Group Members: Mihir Rana, Cristofer Carcamo, Jyotika Chand
 import java.io.*;
 import java.math.BigInteger;
 import java.security.NoSuchAlgorithmException;
@@ -15,7 +17,7 @@ public class Cracker {
 
         // read common passwords file into a set
         //File commonPasswordsFile = new File("common-passwords");
-        File commonPasswordsFile = new File("shortlist");
+        File commonPasswordsFile = new File("common-passwords");
         Scanner scanner = new Scanner(commonPasswordsFile);
         HashSet<String> commonPasswords = new HashSet<>();
         while (scanner.hasNextLine()) {

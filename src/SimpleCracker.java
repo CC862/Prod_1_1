@@ -1,3 +1,6 @@
+// Course: CS645
+//Group Members: Mihir Rana, Cristofer Carcamo, Jyotika Chand
+
 import java.io.*;
 import java.math.BigInteger;
 import java.security.MessageDigest;

@@ -1,12 +1,16 @@
+// Course: CS645
+//Group Members: Mihir Rana, Cristofer Carcamo, Jyotika Chand
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class RemoveLongWords {
     public static void main(String[] args) {
-        String inputFilename = "common-passwords2";
+        String inputFilename = "common-passwords3";
         String outputFilename = "shortlist";
         ArrayList<String> words = new ArrayList<String>();
 
