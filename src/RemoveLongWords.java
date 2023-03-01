@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class RemoveLongWords {
     public static void main(String[] args) {
-        String inputFilename = "common-passwords3";
-        String outputFilename = "shortlist";
+        String inputFilename = "../src/common-passwords3";
+        String outputFilename = "../src/shortlist";
         ArrayList<String> words = new ArrayList<String>();
 
         // Read in the words from the input file

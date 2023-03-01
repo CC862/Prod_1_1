@@ -18,7 +18,7 @@ public class SimpleCracker {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
 
         // read common passwords file into a set
-        File commonPasswordsFile = new File("common-passwords");
+        File commonPasswordsFile = new File("../src/common-passwords");
         Scanner scanner = new Scanner(commonPasswordsFile);
         HashSet<String> commonPasswords = new HashSet<>();
         while (scanner.hasNextLine()) {
@@ -27,7 +27,7 @@ public class SimpleCracker {
         scanner.close();
 
         // read shadow file and try to crack passwords
-        File shadowFile = new File("shadow-simple");
+        File shadowFile = new File("../src/shadow-simple");
         scanner = new Scanner(shadowFile);
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
